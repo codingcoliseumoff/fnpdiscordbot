@@ -102,8 +102,87 @@ CREATE TABLE IF NOT EXISTS public.lobbies (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
+/* Server Settings */
+CREATE TABLE IF NOT EXISTS public.server_settings (
+    server_id TEXT PRIMARY KEY,
+    spawn_channel_id TEXT,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+/* Spawns Table */
+CREATE TABLE IF NOT EXISTS public.spawns (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    server_id TEXT REFERENCES public.server_settings(server_id),
+    driver_id TEXT,
+    driver_name TEXT,
+    status TEXT DEFAULT 'active',
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+/* User Dex Table */
+CREATE TABLE IF NOT EXISTS public.user_dex (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_id TEXT REFERENCES public.users(user_id),
+    driver_id TEXT,
+    driver_name TEXT,
+    collected_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+/* Universal Drivers Extension */
+ALTER TABLE public.drivers 
+ADD COLUMN IF NOT EXISTS trait TEXT,
+ADD COLUMN IF NOT EXISTS reliability FLOAT DEFAULT 80.0,
+ADD COLUMN IF NOT EXISTS tier INTEGER DEFAULT 1,
+ADD COLUMN IF NOT EXISTS rarity TEXT DEFAULT 'Standard',
+ADD COLUMN IF NOT EXISTS salary BIGINT DEFAULT 50000,
+ADD COLUMN IF NOT EXISTS contract_laps INTEGER DEFAULT 0;
+
+/* Team Development Branching */
+ALTER TABLE public.teams
+ADD COLUMN IF NOT EXISTS reliability FLOAT DEFAULT 20.0,
+ADD COLUMN IF NOT EXISTS development_path TEXT DEFAULT 'Balanced', /* Balanced, HighSpeed, Cornering */
+ADD COLUMN IF NOT EXISTS sponsor_id TEXT,
+ADD COLUMN IF NOT EXISTS branding_config JSONB DEFAULT '{}';
+
+/* Contracts Table */
+CREATE TABLE IF NOT EXISTS public.contracts (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_id TEXT REFERENCES public.users(user_id) ON DELETE CASCADE,
+    driver_id TEXT,
+    salary BIGINT,
+    laps_remaining INTEGER,
+    status TEXT DEFAULT 'active'
+);
+
+/* Sponsorships Table */
+CREATE TABLE IF NOT EXISTS public.sponsorships (
+    id TEXT PRIMARY KEY,
+    name TEXT,
+    bonus_money BIGINT,
+    requirements JSONB
+);
+
+/* User Sponsorships */
+CREATE TABLE IF NOT EXISTS public.user_sponsors (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_id TEXT REFERENCES public.users(user_id) ON DELETE CASCADE,
+    sponsor_id TEXT REFERENCES public.sponsorships(id),
+    laps_remaining INTEGER DEFAULT 0,
+    performance_bonus FLOAT DEFAULT 1.0,
+    signed_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+/* Legend Mode & Global Rankings */
+CREATE TABLE IF NOT EXISTS public.global_rankings (
+    user_id TEXT PRIMARY KEY REFERENCES public.users(user_id),
+    global_points INTEGER DEFAULT 0,
+    server_represented TEXT,
+    world_rank INTEGER
+);
+
 /* Indexes */
-CREATE INDEX idx_teams_owner ON public.teams(owner_user_id);
-CREATE INDEX idx_drivers_team ON public.drivers(team_id);
-CREATE INDEX idx_users_money ON public.users(money DESC);
-CREATE INDEX idx_users_xp ON public.users(xp DESC);
+CREATE INDEX IF NOT EXISTS idx_teams_owner ON public.teams(owner_user_id);
+CREATE INDEX IF NOT EXISTS idx_drivers_team ON public.drivers(team_id);
+CREATE INDEX IF NOT EXISTS idx_users_money ON public.users(money DESC);
+CREATE INDEX IF NOT EXISTS idx_users_xp ON public.users(xp DESC);
+CREATE INDEX IF NOT EXISTS idx_user_dex ON public.user_dex(user_id);

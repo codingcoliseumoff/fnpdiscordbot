@@ -1,5 +1,9 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const { db } = require('../utils/Supabase');
+const fs = require('fs');
+const path = require('path');
+
+const driversData = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/drivers.json'), 'utf8'));
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -7,13 +11,7 @@ module.exports = {
     .setDescription('The RNG game: Pick a random driver for the upcoming weekend!'),
 
   async execute(interaction) {
-    const drivers = [
-        "Max Verstappen", "Lando Norris", "Charles Leclerc", "Oscar Piastri",
-        "Carlos Sainz", "Lewis Hamilton", "George Russell", "Sergio Perez",
-        "Fernando Alonso", "Nico Hulkenberg", "Lance Stroll", "Yuki Tsunoda",
-        "Kevin Magnussen", "Alex Albon", "Daniel Ricciardo", "Pierre Gasly",
-        "Esteban Ocon", "Zhou Guanyu", "Logan Sargeant", "Valtteri Bottas"
-    ];
+    const drivers = driversData.filter(d => d.stats.pace > 75).map(d => d.name);
 
     const randomDriver = drivers[Math.floor(Math.random() * drivers.length)];
     const userId = interaction.user.id;

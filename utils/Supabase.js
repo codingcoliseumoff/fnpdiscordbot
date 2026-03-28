@@ -25,8 +25,8 @@ const db = {
         return data;
     },
 
-    async createTeam(userId, name, color, websiteName) {
-        const { data, error } = await supabase.from('teams').insert([{ owner_user_id: userId, name, color, website_name: websiteName }]).select().single();
+    async createTeam(userId, name, color, websiteName, tier = 1) {
+        const { data, error } = await supabase.from('teams').insert([{ owner_user_id: userId, name, color, website_name: websiteName, tier }]).select().single();
         return data;
     },
 
@@ -42,10 +42,48 @@ const db = {
     },
 
     // Global Stats
-    async getGlobalLeaderboard(type = 'money') {
-        const { data, error } = await supabase.from('users').select('*').order(type, { ascending: false }).limit(10);
+    async getLeaderboard(type = 'money', limit = 10) {
+        const { data, error } = await supabase.from('users').select('*').order(type, { ascending: false }).limit(limit);
+        return data || [];
+    },
+
+    // Lobby functions
+    async createLobby(code, host_id, server_id) {
+        const { data, error } = await supabase.from('lobbies').insert([{ code, host_id, server_id, status: 'waiting', players: JSON.stringify([{ id: host_id }]) }]).select().single();
         return data;
-    }
+    },
+
+    async getLobbies(server_id) {
+        const { data, error } = await supabase.from('lobbies').select('*').eq('server_id', server_id).eq('status', 'waiting');
+        return data || [];
+    },
+
+    // Tournament functions
+    async getCurrentTournament(server_id) {
+        let { data, error } = await supabase.from('server_tournaments').select('*').eq('server_id', server_id).eq('status', 'active').maybeSingle();
+        return data;
+    },
+
+    async createTournament(server_id, rounds = 24) {
+        const { data, error } = await supabase.from('server_tournaments').insert([{ server_id, total_rounds: rounds, status: 'active' }]).select().single();
+        if (error) {
+            console.error("DB Error in createTournament:", error);
+            throw error;
+        }
+        return data;
+    },
+
+    async resetTournament(server_id) {
+        const { data, error } = await supabase.from('server_tournaments').update({ current_round: 0 }).eq('server_id', server_id);
+        return data;
+    },
+
+    async endTournament(server_id) {
+        const { data, error } = await supabase.from('server_tournaments').update({ status: 'ended' }).eq('server_id', server_id);
+        return data;
+    },
+    
+    supabase: supabase
 };
 
 module.exports = { db, supabase };
