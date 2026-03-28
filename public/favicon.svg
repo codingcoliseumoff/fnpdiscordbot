@@ -1,0 +1,25 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Body Shadow -->
+  <rect x="18" y="10" width="28" height="44" rx="14" fill="#000" fill-opacity="0.2" transform="translate(2, 2)"/>
+  
+  <!-- Main Body -->
+  <rect x="18" y="10" width="28" height="44" rx="14" fill="#E71D36"/>
+  <rect x="22" y="14" width="20" height="36" rx="10" fill="#FF4D6D"/>
+  
+  <!-- Wheels -->
+  <rect x="10" y="14" width="8" height="12" rx="4" fill="#1C1C25"/>
+  <rect x="46" y="14" width="8" height="12" rx="4" fill="#1C1C25"/>
+  <rect x="10" y="38" width="8" height="12" rx="4" fill="#1C1C25"/>
+  <rect x="46" y="38" width="8" height="12" rx="4" fill="#1C1C25"/>
+  
+  <!-- Spoiler / Front Wing -->
+  <rect x="14" y="8" width="36" height="4" rx="2" fill="#FFD700"/>
+  <rect x="14" y="52" width="36" height="4" rx="2" fill="#FFD700"/>
+  
+  <!-- Cockpit -->
+  <circle cx="32" cy="28" r="6" fill="#1C1C25"/>
+  <circle cx="32" cy="27" r="4" fill="#43B02A"/> <!-- Helmet -->
+  
+  <!-- Accent -->
+  <path d="M28 15L36 15L32 10L28 15Z" fill="#FFF" fill-opacity="0.3"/>
+</svg>

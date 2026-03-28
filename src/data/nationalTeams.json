@@ -1,0 +1,802 @@
+[
+  {
+    "id": "nat-GBR",
+    "name": "United Kingdom",
+    "category": "National",
+    "color": "#8be2ef",
+    "engine": "generic",
+    "tier": 1,
+    "isNational": true,
+    "countryCode": "GBR",
+    "stats": {
+      "carPerformance": 92,
+      "strategy": 92,
+      "development": 92,
+      "pitCrew": 92
+    }
+  },
+  {
+    "id": "nat-NED",
+    "name": "Netherlands",
+    "category": "National",
+    "color": "#b76921",
+    "engine": "generic",
+    "tier": 1,
+    "isNational": true,
+    "countryCode": "NED",
+    "stats": {
+      "carPerformance": 90,
+      "strategy": 90,
+      "development": 90,
+      "pitCrew": 90
+    }
+  },
+  {
+    "id": "nat-MON",
+    "name": "Monaco",
+    "category": "National",
+    "color": "#95533c",
+    "engine": "generic",
+    "tier": 1,
+    "isNational": true,
+    "countryCode": "MON",
+    "stats": {
+      "carPerformance": 88,
+      "strategy": 88,
+      "development": 88,
+      "pitCrew": 88
+    }
+  },
+  {
+    "id": "nat-ESP",
+    "name": "Spain",
+    "category": "National",
+    "color": "#61ffdc",
+    "engine": "generic",
+    "tier": 1,
+    "isNational": true,
+    "countryCode": "ESP",
+    "stats": {
+      "carPerformance": 91,
+      "strategy": 91,
+      "development": 91,
+      "pitCrew": 91
+    }
+  },
+  {
+    "id": "nat-FRA",
+    "name": "France",
+    "category": "National",
+    "color": "#5541e4",
+    "engine": "generic",
+    "tier": 1,
+    "isNational": true,
+    "countryCode": "FRA",
+    "stats": {
+      "carPerformance": 88,
+      "strategy": 88,
+      "development": 88,
+      "pitCrew": 88
+    }
+  },
+  {
+    "id": "nat-GER",
+    "name": "Germany",
+    "category": "National",
+    "color": "#36278f",
+    "engine": "generic",
+    "tier": 1,
+    "isNational": true,
+    "countryCode": "GER",
+    "stats": {
+      "carPerformance": 89,
+      "strategy": 89,
+      "development": 89,
+      "pitCrew": 89
+    }
+  },
+  {
+    "id": "nat-AUS",
+    "name": "Australia",
+    "category": "National",
+    "color": "#be2c84",
+    "engine": "generic",
+    "tier": 1,
+    "isNational": true,
+    "countryCode": "AUS",
+    "stats": {
+      "carPerformance": 88,
+      "strategy": 88,
+      "development": 88,
+      "pitCrew": 88
+    }
+  },
+  {
+    "id": "nat-MEX",
+    "name": "Mexico",
+    "category": "National",
+    "color": "#cd3b55",
+    "engine": "generic",
+    "tier": 1,
+    "isNational": true,
+    "countryCode": "MEX",
+    "stats": {
+      "carPerformance": 87,
+      "strategy": 87,
+      "development": 87,
+      "pitCrew": 87
+    }
+  },
+  {
+    "id": "nat-JPN",
+    "name": "Japan",
+    "category": "National",
+    "color": "#78cc23",
+    "engine": "generic",
+    "tier": 1,
+    "isNational": true,
+    "countryCode": "JPN",
+    "stats": {
+      "carPerformance": 86,
+      "strategy": 86,
+      "development": 86,
+      "pitCrew": 86
+    }
+  },
+  {
+    "id": "nat-USA",
+    "name": "United States",
+    "category": "National",
+    "color": "#06aebb",
+    "engine": "generic",
+    "tier": 1,
+    "isNational": true,
+    "countryCode": "USA",
+    "stats": {
+      "carPerformance": 82,
+      "strategy": 82,
+      "development": 82,
+      "pitCrew": 82
+    }
+  },
+  {
+    "id": "nat-CAN",
+    "name": "Canada",
+    "category": "National",
+    "color": "#178dba",
+    "engine": "generic",
+    "tier": 2,
+    "isNational": true,
+    "countryCode": "CAN",
+    "stats": {
+      "carPerformance": 81,
+      "strategy": 81,
+      "development": 81,
+      "pitCrew": 81
+    }
+  },
+  {
+    "id": "nat-FIN",
+    "name": "Finland",
+    "category": "National",
+    "color": "#cbb77e",
+    "engine": "generic",
+    "tier": 2,
+    "isNational": true,
+    "countryCode": "FIN",
+    "stats": {
+      "carPerformance": 89,
+      "strategy": 89,
+      "development": 89,
+      "pitCrew": 89
+    }
+  },
+  {
+    "id": "nat-DEN",
+    "name": "Denmark",
+    "category": "National",
+    "color": "#a91aba",
+    "engine": "generic",
+    "tier": 2,
+    "isNational": true,
+    "countryCode": "DEN",
+    "stats": {
+      "carPerformance": 84,
+      "strategy": 84,
+      "development": 84,
+      "pitCrew": 84
+    }
+  },
+  {
+    "id": "nat-CHN",
+    "name": "China",
+    "category": "National",
+    "color": "#3cfb8c",
+    "engine": "generic",
+    "tier": 2,
+    "isNational": true,
+    "countryCode": "CHN",
+    "stats": {
+      "carPerformance": 82,
+      "strategy": 82,
+      "development": 82,
+      "pitCrew": 82
+    }
+  },
+  {
+    "id": "nat-THA",
+    "name": "Thailand",
+    "category": "National",
+    "color": "#b92a0d",
+    "engine": "generic",
+    "tier": 2,
+    "isNational": true,
+    "countryCode": "THA",
+    "stats": {
+      "carPerformance": 83,
+      "strategy": 83,
+      "development": 83,
+      "pitCrew": 83
+    }
+  },
+  {
+    "id": "nat-IND",
+    "name": "India",
+    "category": "National",
+    "color": "#345103",
+    "engine": "generic",
+    "tier": 2,
+    "isNational": true,
+    "countryCode": "IND",
+    "stats": {
+      "carPerformance": 84,
+      "strategy": 84,
+      "development": 84,
+      "pitCrew": 84
+    }
+  },
+  {
+    "id": "nat-POL",
+    "name": "Poland",
+    "category": "National",
+    "color": "#e2b137",
+    "engine": "generic",
+    "tier": 2,
+    "isNational": true,
+    "countryCode": "POL",
+    "stats": {
+      "carPerformance": 84,
+      "strategy": 84,
+      "development": 84,
+      "pitCrew": 84
+    }
+  },
+  {
+    "id": "nat-BRA",
+    "name": "Brazil",
+    "category": "National",
+    "color": "#a9aaba",
+    "engine": "generic",
+    "tier": 2,
+    "isNational": true,
+    "countryCode": "BRA",
+    "stats": {
+      "carPerformance": 86,
+      "strategy": 86,
+      "development": 86,
+      "pitCrew": 86
+    }
+  },
+  {
+    "id": "nat-SWE",
+    "name": "Sweden",
+    "category": "National",
+    "color": "#5f3e47",
+    "engine": "generic",
+    "tier": 2,
+    "isNational": true,
+    "countryCode": "SWE",
+    "stats": {
+      "carPerformance": 84,
+      "strategy": 84,
+      "development": 84,
+      "pitCrew": 84
+    }
+  },
+  {
+    "id": "nat-ARG",
+    "name": "Argentina",
+    "category": "National",
+    "color": "#092aa7",
+    "engine": "generic",
+    "tier": 2,
+    "isNational": true,
+    "countryCode": "ARG",
+    "stats": {
+      "carPerformance": 85,
+      "strategy": 85,
+      "development": 85,
+      "pitCrew": 85
+    }
+  },
+  {
+    "id": "nat-CHE",
+    "name": "Switzerland",
+    "category": "National",
+    "color": "#48e965",
+    "engine": "generic",
+    "tier": 3,
+    "isNational": true,
+    "countryCode": "CHE",
+    "stats": {
+      "carPerformance": 83,
+      "strategy": 83,
+      "development": 83,
+      "pitCrew": 83
+    }
+  },
+  {
+    "id": "nat-POR",
+    "name": "Portugal",
+    "category": "National",
+    "color": "#d8670c",
+    "engine": "generic",
+    "tier": 3,
+    "isNational": true,
+    "countryCode": "POR",
+    "stats": {
+      "carPerformance": 85,
+      "strategy": 85,
+      "development": 85,
+      "pitCrew": 85
+    }
+  },
+  {
+    "id": "nat-BEL",
+    "name": "Belgium",
+    "category": "National",
+    "color": "#7b4bd3",
+    "engine": "generic",
+    "tier": 3,
+    "isNational": true,
+    "countryCode": "BEL",
+    "stats": {
+      "carPerformance": 85,
+      "strategy": 85,
+      "development": 85,
+      "pitCrew": 85
+    }
+  },
+  {
+    "id": "nat-IRE",
+    "name": "Ireland",
+    "category": "National",
+    "color": "#f78a71",
+    "engine": "generic",
+    "tier": 3,
+    "isNational": true,
+    "countryCode": "IRE",
+    "stats": {
+      "carPerformance": 80,
+      "strategy": 80,
+      "development": 80,
+      "pitCrew": 80
+    }
+  },
+  {
+    "id": "nat-CZE",
+    "name": "Czech Republic",
+    "category": "National",
+    "color": "#fbc9ab",
+    "engine": "generic",
+    "tier": 3,
+    "isNational": true,
+    "countryCode": "CZE",
+    "stats": {
+      "carPerformance": 82,
+      "strategy": 82,
+      "development": 82,
+      "pitCrew": 82
+    }
+  },
+  {
+    "id": "nat-IDN",
+    "name": "Indonesia",
+    "category": "National",
+    "color": "#e2888c",
+    "engine": "generic",
+    "tier": 3,
+    "isNational": true,
+    "countryCode": "IDN",
+    "stats": {
+      "carPerformance": 81,
+      "strategy": 81,
+      "development": 81,
+      "pitCrew": 81
+    }
+  },
+  {
+    "id": "nat-MYS",
+    "name": "Malaysia",
+    "category": "National",
+    "color": "#431148",
+    "engine": "generic",
+    "tier": 3,
+    "isNational": true,
+    "countryCode": "MYS",
+    "stats": {
+      "carPerformance": 77,
+      "strategy": 77,
+      "development": 77,
+      "pitCrew": 77
+    }
+  },
+  {
+    "id": "nat-SGP",
+    "name": "Singapore",
+    "category": "National",
+    "color": "#1a3121",
+    "engine": "generic",
+    "tier": 3,
+    "isNational": true,
+    "countryCode": "SGP",
+    "stats": {
+      "carPerformance": 79,
+      "strategy": 79,
+      "development": 79,
+      "pitCrew": 79
+    }
+  },
+  {
+    "id": "nat-RSA",
+    "name": "South Africa",
+    "category": "National",
+    "color": "#a1af25",
+    "engine": "generic",
+    "tier": 3,
+    "isNational": true,
+    "countryCode": "RSA",
+    "stats": {
+      "carPerformance": 84,
+      "strategy": 84,
+      "development": 84,
+      "pitCrew": 84
+    }
+  },
+  {
+    "id": "nat-TUR",
+    "name": "Turkey",
+    "category": "National",
+    "color": "#4605f1",
+    "engine": "generic",
+    "tier": 3,
+    "isNational": true,
+    "countryCode": "TUR",
+    "stats": {
+      "carPerformance": 80,
+      "strategy": 80,
+      "development": 80,
+      "pitCrew": 80
+    }
+  },
+  {
+    "id": "nat-NZL",
+    "name": "New Zealand",
+    "category": "National",
+    "color": "#df3a21",
+    "engine": "generic",
+    "tier": 4,
+    "isNational": true,
+    "countryCode": "NZL",
+    "stats": {
+      "carPerformance": 85,
+      "strategy": 85,
+      "development": 85,
+      "pitCrew": 85
+    }
+  },
+  {
+    "id": "nat-HUN",
+    "name": "Hungary",
+    "category": "National",
+    "color": "#ff3cbd",
+    "engine": "generic",
+    "tier": 4,
+    "isNational": true,
+    "countryCode": "HUN",
+    "stats": {
+      "carPerformance": 78,
+      "strategy": 78,
+      "development": 78,
+      "pitCrew": 78
+    }
+  },
+  {
+    "id": "nat-GRC",
+    "name": "Greece",
+    "category": "National",
+    "color": "#91309e",
+    "engine": "generic",
+    "tier": 4,
+    "isNational": true,
+    "countryCode": "GRC",
+    "stats": {
+      "carPerformance": 71,
+      "strategy": 71,
+      "development": 71,
+      "pitCrew": 71
+    }
+  },
+  {
+    "id": "nat-PHL",
+    "name": "Philippines",
+    "category": "National",
+    "color": "#5d7554",
+    "engine": "generic",
+    "tier": 4,
+    "isNational": true,
+    "countryCode": "PHL",
+    "stats": {
+      "carPerformance": 75,
+      "strategy": 75,
+      "development": 75,
+      "pitCrew": 75
+    }
+  },
+  {
+    "id": "nat-CHL",
+    "name": "Chile",
+    "category": "National",
+    "color": "#b4831a",
+    "engine": "generic",
+    "tier": 4,
+    "isNational": true,
+    "countryCode": "CHL",
+    "stats": {
+      "carPerformance": 75,
+      "strategy": 75,
+      "development": 75,
+      "pitCrew": 75
+    }
+  },
+  {
+    "id": "nat-PAK",
+    "name": "Pakistan",
+    "category": "National",
+    "color": "#db2dbb",
+    "engine": "generic",
+    "tier": 4,
+    "isNational": true,
+    "countryCode": "PAK",
+    "stats": {
+      "carPerformance": 73,
+      "strategy": 73,
+      "development": 73,
+      "pitCrew": 73
+    }
+  },
+  {
+    "id": "nat-BGD",
+    "name": "Bangladesh",
+    "category": "National",
+    "color": "#56294a",
+    "engine": "generic",
+    "tier": 4,
+    "isNational": true,
+    "countryCode": "BGD",
+    "stats": {
+      "carPerformance": 71,
+      "strategy": 71,
+      "development": 71,
+      "pitCrew": 71
+    }
+  },
+  {
+    "id": "nat-IRN",
+    "name": "Iran",
+    "category": "National",
+    "color": "#d6f5a3",
+    "engine": "generic",
+    "tier": 4,
+    "isNational": true,
+    "countryCode": "IRN",
+    "stats": {
+      "carPerformance": 71,
+      "strategy": 71,
+      "development": 71,
+      "pitCrew": 71
+    }
+  },
+  {
+    "id": "nat-ARE",
+    "name": "United Arab Emirates",
+    "category": "National",
+    "color": "#fcc931",
+    "engine": "generic",
+    "tier": 4,
+    "isNational": true,
+    "countryCode": "ARE",
+    "stats": {
+      "carPerformance": 75,
+      "strategy": 75,
+      "development": 75,
+      "pitCrew": 75
+    }
+  },
+  {
+    "id": "nat-LBN",
+    "name": "Lebanon",
+    "category": "National",
+    "color": "#4d6c36",
+    "engine": "generic",
+    "tier": 4,
+    "isNational": true,
+    "countryCode": "LBN",
+    "stats": {
+      "carPerformance": 75,
+      "strategy": 75,
+      "development": 75,
+      "pitCrew": 75
+    }
+  },
+  {
+    "id": "nat-EGY",
+    "name": "Egypt",
+    "category": "National",
+    "color": "#aa8fcd",
+    "engine": "generic",
+    "tier": 5,
+    "isNational": true,
+    "countryCode": "EGY",
+    "stats": {
+      "carPerformance": 67,
+      "strategy": 67,
+      "development": 67,
+      "pitCrew": 67
+    }
+  },
+  {
+    "id": "nat-KEN",
+    "name": "Kenya",
+    "category": "National",
+    "color": "#57929d",
+    "engine": "generic",
+    "tier": 5,
+    "isNational": true,
+    "countryCode": "KEN",
+    "stats": {
+      "carPerformance": 69,
+      "strategy": 69,
+      "development": 69,
+      "pitCrew": 69
+    }
+  },
+  {
+    "id": "nat-NGA",
+    "name": "Nigeria",
+    "category": "National",
+    "color": "#347589",
+    "engine": "generic",
+    "tier": 5,
+    "isNational": true,
+    "countryCode": "NGA",
+    "stats": {
+      "carPerformance": 64,
+      "strategy": 64,
+      "development": 64,
+      "pitCrew": 64
+    }
+  },
+  {
+    "id": "nat-PER",
+    "name": "Peru",
+    "category": "National",
+    "color": "#e53664",
+    "engine": "generic",
+    "tier": 5,
+    "isNational": true,
+    "countryCode": "PER",
+    "stats": {
+      "carPerformance": 69,
+      "strategy": 69,
+      "development": 69,
+      "pitCrew": 69
+    }
+  },
+  {
+    "id": "nat-COL",
+    "name": "Colombia",
+    "category": "National",
+    "color": "#52e8ec",
+    "engine": "generic",
+    "tier": 5,
+    "isNational": true,
+    "countryCode": "COL",
+    "stats": {
+      "carPerformance": 71,
+      "strategy": 71,
+      "development": 71,
+      "pitCrew": 71
+    }
+  },
+  {
+    "id": "nat-VNM",
+    "name": "Vietnam",
+    "category": "National",
+    "color": "#3b101a",
+    "engine": "generic",
+    "tier": 5,
+    "isNational": true,
+    "countryCode": "VNM",
+    "stats": {
+      "carPerformance": 68,
+      "strategy": 68,
+      "development": 68,
+      "pitCrew": 68
+    }
+  },
+  {
+    "id": "nat-ROU",
+    "name": "Romania",
+    "category": "National",
+    "color": "#d7981a",
+    "engine": "generic",
+    "tier": 5,
+    "isNational": true,
+    "countryCode": "ROU",
+    "stats": {
+      "carPerformance": 69,
+      "strategy": 69,
+      "development": 69,
+      "pitCrew": 69
+    }
+  },
+  {
+    "id": "nat-BGR",
+    "name": "Bulgaria",
+    "category": "National",
+    "color": "#7d2be0",
+    "engine": "generic",
+    "tier": 5,
+    "isNational": true,
+    "countryCode": "BGR",
+    "stats": {
+      "carPerformance": 68,
+      "strategy": 68,
+      "development": 68,
+      "pitCrew": 68
+    }
+  },
+  {
+    "id": "nat-MAR",
+    "name": "Morocco",
+    "category": "National",
+    "color": "#44c3db",
+    "engine": "generic",
+    "tier": 5,
+    "isNational": true,
+    "countryCode": "MAR",
+    "stats": {
+      "carPerformance": 71,
+      "strategy": 71,
+      "development": 71,
+      "pitCrew": 71
+    }
+  },
+  {
+    "id": "nat-SVK",
+    "name": "Slovakia",
+    "category": "National",
+    "color": "#20fd38",
+    "engine": "generic",
+    "tier": 5,
+    "isNational": true,
+    "countryCode": "SVK",
+    "stats": {
+      "carPerformance": 71,
+      "strategy": 71,
+      "development": 71,
+      "pitCrew": 71
+    }
+  }
+]

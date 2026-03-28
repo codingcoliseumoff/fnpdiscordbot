@@ -1,0 +1,182 @@
+[
+  {
+    "id": "ferrari",
+    "name": "Ferrari V6 Turbo Hybrid",
+    "philosophy": "Peak Power",
+    "power": 98,
+    "reliability": 85,
+    "efficiency": 88,
+    "upgradeCeiling": 99,
+    "weight": 150
+  },
+  {
+    "id": "mercedes",
+    "name": "Mercedes-AMG High Performance",
+    "philosophy": "Balanced Efficiency",
+    "power": 96,
+    "reliability": 95,
+    "efficiency": 97,
+    "upgradeCeiling": 98,
+    "weight": 148
+  },
+  {
+    "id": "honda",
+    "name": "Honda RBPTH",
+    "philosophy": "Traction & Deployment",
+    "power": 97,
+    "reliability": 92,
+    "efficiency": 94,
+    "upgradeCeiling": 98,
+    "weight": 149
+  },
+  {
+    "id": "renault",
+    "name": "Renault E-Tech",
+    "philosophy": "Lightweight Agility",
+    "power": 92,
+    "reliability": 88,
+    "efficiency": 90,
+    "upgradeCeiling": 95,
+    "weight": 145
+  },
+  {
+    "id": "audi",
+    "name": "Audi Vorsprung",
+    "philosophy": "Efficiency King",
+    "power": 95,
+    "reliability": 94,
+    "efficiency": 98,
+    "upgradeCeiling": 99,
+    "weight": 152
+  },
+  {
+    "id": "bmw",
+    "name": "BMW M-Hybrid V8",
+    "philosophy": "Top Speed",
+    "power": 97,
+    "reliability": 90,
+    "efficiency": 91,
+    "upgradeCeiling": 97,
+    "weight": 151
+  },
+  {
+    "id": "toyota",
+    "name": "Toyota GR Hybrid",
+    "philosophy": "Bulletproof Reliability",
+    "power": 94,
+    "reliability": 98,
+    "efficiency": 95,
+    "upgradeCeiling": 96,
+    "weight": 153
+  },
+  {
+    "id": "porsche",
+    "name": "Porsche E-Performance",
+    "philosophy": "Precision Delivery",
+    "power": 96,
+    "reliability": 93,
+    "efficiency": 93,
+    "upgradeCeiling": 98,
+    "weight": 147
+  },
+  {
+    "id": "ford",
+    "name": "Ford EcoBoost Hybrid",
+    "philosophy": "Torque Heavy",
+    "power": 93,
+    "reliability": 89,
+    "efficiency": 91,
+    "upgradeCeiling": 94,
+    "weight": 149
+  },
+  {
+    "id": "hyundai",
+    "name": "Hyundai N-HEV",
+    "philosophy": "Rapid Development",
+    "power": 91,
+    "reliability": 87,
+    "efficiency": 92,
+    "upgradeCeiling": 97,
+    "weight": 146
+  },
+  {
+    "id": "cadillac",
+    "name": "Cadillac Blackwing V8-H",
+    "philosophy": "Raw Power",
+    "power": 95,
+    "reliability": 86,
+    "efficiency": 85,
+    "upgradeCeiling": 96,
+    "weight": 155
+  },
+  {
+    "id": "lamborghini",
+    "name": "Lamborghini Squadra Corse",
+    "philosophy": "High RPM High Power",
+    "power": 98,
+    "reliability": 82,
+    "efficiency": 83,
+    "upgradeCeiling": 97,
+    "weight": 154
+  },
+  {
+    "id": "rimac",
+    "name": "Rimac Electric Drive",
+    "philosophy": "Instant Torque",
+    "power": 100,
+    "reliability": 90,
+    "efficiency": 99,
+    "upgradeCeiling": 100,
+    "weight": 180
+  },
+  {
+    "id": "tesla",
+    "name": "Tesla Plaid-X Engine",
+    "philosophy": "Battery Efficiency",
+    "power": 95,
+    "reliability": 94,
+    "efficiency": 100,
+    "upgradeCeiling": 98,
+    "weight": 175
+  },
+  {
+    "id": "cosworth",
+    "name": "Cosworth Independent V6",
+    "philosophy": "Maximum Aerodynamic Integration",
+    "power": 94,
+    "reliability": 85,
+    "efficiency": 88,
+    "upgradeCeiling": 93,
+    "weight": 140
+  },
+  {
+    "id": "dallara",
+    "name": "Dallara Chassis-Optimized PU",
+    "philosophy": "Handling Focus",
+    "power": 90,
+    "reliability": 92,
+    "efficiency": 90,
+    "upgradeCeiling": 92,
+    "weight": 142
+  },
+  {
+    "id": "bosch",
+    "name": "Bosch Performance Systems",
+    "philosophy": "Software Control",
+    "power": 89,
+    "reliability": 97,
+    "efficiency": 96,
+    "upgradeCeiling": 95,
+    "weight": 144
+  },
+  {
+    "id": "spacex",
+    "name": "SpaceX Cold Gas Hybrid",
+    "philosophy": "Experimental Aero",
+    "power": 99,
+    "reliability": 70,
+    "efficiency": 80,
+    "upgradeCeiling": 100,
+    "weight": 160
+  }
+]
